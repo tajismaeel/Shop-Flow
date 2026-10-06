@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ShopFlow – Products</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="products">
+    <main class="container" id="app">
+      <h1>Products</h1>
+      <div class="filters">
+        <input
+          id="q"
+          type="search"
+          placeholder="Search products"
+          aria-label="Search"
+        /><select id="cat" aria-label="Category"></select>
+        <select id="sort" aria-label="Sort">
+          <option value="">Sort: featured</option>
+          <option value="pa">Price: low to high</option>
+          <option value="pd">Price: high to low</option>
+          <option value="r">Top rated</option>
+          <option value="n">Name A–Z</option>
+        </select>
+        <label class="check"
+          ><input type="checkbox" id="favOnly" /> Favorites only</label
+        >
+      </div>
+      <p class="muted" id="count"></p>
+      <div class="grid" id="grid"></div>
+    </main>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
